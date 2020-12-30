@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\graphicspath{ {background} }
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+\pgfpagesdeclarelayout{boxed}
+{
+  \edef\pgfpageoptionborder{0pt}
+}
+{
+  \pgfpagesphysicalpageoptions
+  {%
+    logical pages=1,%
+  }
+  \pgfpageslogicalpageoptions{1}
+  {
+    border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+    border shrink=\pgfpageoptionborder,%
+    resized width=.95\pgfphysicalwidth,%
+    resized height=.95\pgfphysicalheight,%
+    center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+  }%
+}
+
+\pgfpagesuselayout{boxed}
+\title{HomeWork 9}
+\author{Alireza Ramezanzadeh}
+\date{December 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Code cpp:}
+
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+
+\begin{lstlisting}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ cout << "Hello World!" << endl;
+ return 0;
+}
+\end{lstlisting}
+\section{formula:}
+\huge \int_2^3 x^2 \, dx=\frac{3^3}{3}-\frac{2^3}{3}=\frac{19}{3}
+
+\section{image:}
+
+\begin{center}
+\includegraphics[width=100mm]{background.jpg}
+\label{fig}
+\end{center}
+\end{document}
